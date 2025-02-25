@@ -1,10 +1,10 @@
 /* Base styles and variables */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2c3e50;
+    --primary-color: #2e72cb;
+    --secondary-color: #353535;
     --accent-color: #e74c3c;
-    --background-color: #f8f9fa;
-    --text-color: #333;
+    --background-color: #fffffc;
+    --text-color: #353535;
     --light-gray: #e0e0e0;
     --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
@@ -84,7 +84,7 @@ ul {
 
 /* Navigation styles */
 header {
-    background-color: white;
+    background-color: #fffffc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -100,10 +100,9 @@ header {
     margin: 0 auto;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--secondary-color);
+.logo img {
+    height: 80px; /* Adjust the height as needed */
+    width: auto; /* Maintains aspect ratio */
 }
 
 .nav-links {
