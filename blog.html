@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for blog page */
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .blog-post {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .blog-post:last-child {
+            border-bottom: none;
+        }
+        
+        .post-meta {
+            margin-bottom: 10px;
+        }
+        
+        .post-date {
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        .blog-post h3 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        .blog-post p {
+            margin-bottom: 20px;
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .read-more {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">Your Name</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Blog</h1>
+            <p>My thoughts on technology, mathematics, and the occasional random topic.</p>
+        </section>
+        
+        <section class="blog-container" id="blog-container">
+            <!-- Blog posts will be loaded from JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="mailto:your.email@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

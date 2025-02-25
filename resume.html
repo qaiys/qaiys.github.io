@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for resume page */
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: var(--card-shadow);
+            border-radius: 8px;
+        }
+        
+        .resume-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .resume-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+        
+        .resume-header p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        .resume-contact {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .resume-section {
+            margin-bottom: 30px;
+        }
+        
+        .resume-section h2 {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+        
+        .resume-item {
+            margin-bottom: 25px;
+        }
+        
+        .resume-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .resume-item h3 {
+            margin-bottom: 5px;
+            color: var(--secondary-color);
+        }
+        
+        .resume-item .role {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .resume-item .date {
+            color: #777;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .resume-item ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .resume-item ul li {
+            margin-bottom: 5px;
+        }
+        
+        .resume-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .resume-skill {
+            background-color: var(--light-gray);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .download-btn {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">Your Name</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Resume</h1>
+            <p>My education, experience, and skills</p>
+        </section>
+        
+        <div class="resume-container">
+            <div class="resume-header">
+                <h1>Your Name</h1>
+                <p>Computer Science & Mathematics Student</p>
+                <div class="resume-contact">
+                    <span>your.email@example.com</span>
+                    <span>(555) 123-4567</span>
+                    <span>City, State</span>
+                </div>
+            </div>
+            
+            <section class="resume-section">
+                <h2>Education</h2>
+                <div class="resume-item">
+                    <h3>University Name</h3>
+                    <div class="role">BSc in Computer Science and Mathematics</div>
+                    <div class="date">Expected Graduation: May 2026</div>
+                    <p>GPA: 3.8/4.0</p>
+                    <p>Relevant coursework: Data Structures & Algorithms, Linear Algebra, Discrete Mathematics, Object-Oriented Programming, Database Systems, Computer Networks, Calculus III</p>
+                </div>
+            </section>
+            
+            <section class="resume-section">
+                <h2>Experience</h2>
+                <div class="resume-item">
+                    <h3>Tech Company Name</h3>
+                    <div class="role">Software Engineering Intern</div>
+                    <div class="date">Summer 2024</div>
+                    <ul>
+                        <li>Developed and maintained web applications using JavaScript, HTML, and CSS</li>
+                        <li>Collaborated with a team of 5 developers to implement new features for the company's main product</li>
+                        <li>Optimized database queries resulting in a 30% improvement in page load times</li>
+                        <li>Participated in code reviews and agile development processes</li>
+                    </ul>
+                </div>
+                
+                <div class="resume-item">
+                    <h3>University Computer Lab</h3>
+                    <div class="role">Teaching Assistant</div>
+                    <div class="date">January 2024 - Present</div>
+                    <ul>
+                        <li>Assist professors in teaching introductory programming courses</li>
+                        <li>Hold weekly office hours to help students with coding assignments</li>
+                        <li>Grade homework and provide constructive feedback to students</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="resume-section">
+                <h2>Projects</h2>
+                <div class="resume-item">
+                    <h3>Algorithm Visualizer</h3>
+                    <div class="date">Spring 2024</div>
+                    <p>Developed an interactive web application to visualize various sorting algorithms, allowing users to adjust speed and array size to better understand algorithmic efficiency.</p>
+                </div>
+                
+                <div class="resume-item">
+                    <h3>Personal Website</h3>
+                    <div class="date">Winter 2025</div>
+                    <p>Created a responsive personal website using vanilla JavaScript, HTML, and CSS to showcase projects, blog posts, and professional information.</p>
+                </div>
+            </section>
+            
+            <section class="resume-section">
+                <h2>Skills</h2>
+                <div class="resume-skills">
+                    <span class="resume-skill">JavaScript</span>
+                    <span class="resume-skill">HTML/CSS</span>
+                    <span class="resume-skill">Python</span>
+                    <span class="resume-skill">Java</span>
+                    <span class="resume-skill">C++</span>
+                    <span class="resume-skill">Git</span>
+                    <span class="resume-skill">SQL</span>
+                    <span class="resume-skill">Data Structures</span>
+                    <span class="resume-skill">Algorithms</span>
+                    <span class="resume-skill">Problem Solving</span>
+                </div>
+            </section>
+            
+            <div class="download-btn">
+                <a href="#" class="btn primary-btn">Download PDF Version</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="mailto:your.email@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
